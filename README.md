@@ -69,7 +69,7 @@
 
 2. 리소스 만들기 -> 웹 앱 만들기 -> 기본
    구독 자유롭게 선택
-   ->리소스 그룹 만들기
+   -> 리소스 그룹 만들기
 	   + 이름은 rg-hg(랜덤숫자조합으로)
 	   + 위치는 Korean Central로 선택
    인스턴스 정보 
@@ -95,17 +95,17 @@
    + 그 아이콘을 통해서 vscode Azure 접속 & 로그인
    + 로그인시 Azure에서 리소스를 만든 계정으로 로그인
    + Resources 에서 해당 레포지토리가 있는 리소스에서 
-   + App Service 에 있는 rg-hg(랜덤숫자조합으로)을 우클릭하여
-   + Deploy to Web App을 선택한다.
+     App Service 에 있는 rg-hg(랜덤숫자조합으로)을 우클릭하여
+     Deploy to Web App을 선택한다.
 
 5. 이 상태에서 vscode 상단에 Select the folder to deploy rg-hg(랜덤숫자조합으로)}을 선택하여 배포를 행한다.
 
    + ctrl + shift + ` 키를 눌러 터미널을 열고 OUTPUT이라 써져 있는 창을 클릭해 진행상황을 확인한다.
    + 여기서 진행중에 info There appears to be trouble with your network connection 이라는 메시지가 출력되면,
-   + 터미널을 열고 yarn cache clean을 통해 캐시를 지운 후, yarn install을 실행해 네트워크를 복구 시킨다.
+     터미널을 열고 yarn cache clean을 통해 캐시를 지운 후, yarn install을 실행해 네트워크를 복구 시킨다.
    + 이런 과정을 시행하면 네트워크 오류 메시지가 나타나지 않을 것이다.
 
-6. Done in OOsec(s) 라고 메시지가 출력되면 배포가 완료된 것을 알 수 있다.
+6. Deployment to "{rg-hg(랜덤숫자조합)}" completed. 라고 메시지가 출력되면 배포가 완료되었다.
 
 
 > **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위한 절차를 구체적으로 나열해 주세요.**
