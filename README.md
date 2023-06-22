@@ -43,6 +43,7 @@
 + Vscode Extension Azure 설치
 + Node.js 18 LTS 설치
 + MySQL 워크벤치 설치 -> [MySQL 워크벤치 다운로드 링크](https://dev.mysql.com/downloads/workbench/)
++ copy the main brainch only 해제로 https://github.com/hackersground-kr/cometo 포크된 레포지토리 하나
 
 ## 시작하기
 1. Azure Database for MySQL 서버에 들어갑니다.
