@@ -62,34 +62,50 @@
 15. 검토 + 만들기를 눌러 만들어준다
 
 # 웹 배포
-1. 프론트 확인
-2. 리소스 그룹 만들기
-   + 이름은 rg-hg(랜덤숫자조합으로)
-   + 위치는 Korean Central로 선택
-3. 웹 앱 선택 만들기
-4. 인스턴스 정보 
+1. Azure 로그인
+   구독이 없을 시 체험계정 생성
+   상단 톱니바퀴 모양을 눌러 설정으로 이동
+   디렉터리 이름 중에서 이전에 만든 디렉토리로 전환
+
+2. 리소스 만들기 -> 웹 앱 만들기 -> 기본
+   구독 자유롭게 선택
+   ->리소스 그룹 만들기
+	   + 이름은 rg-hg(랜덤숫자조합으로)
+	   + 위치는 Korean Central로 선택
+   인스턴스 정보 
    + 이름 - rg-hg(랜덤숫자조합으로)
-   + 게시 - 정적 웹 앱
+   + 게시 - 코드
    + 런타임 스택 - Node.js 18 LTS
+   + 운영 체제 - linux
    + 지역 - Korea Central
-5. 검토 + 만들기 실행
-6. extenstion에서 azure 설치
-7. vscode Azure 접속 & 로그인
-8. Resources 에서 해당 레포지토리가 있는 리소스에서 
-9. App Service 에 있는 {웹 앱 이름}을 우클릭하여
-10. Deploy to Web App을 선택한다.
+   검토 + 만들기 버튼 클릭 
+   만들기
 
-이 상태에서 상단에 Select the folder to deploy {웹 앱 이름}을 선택하여 
-배포를 행한다.
+3. 깃허브 로그인
+   + https://github.com/hackersground-kr/cometo fork 시 copy the main brainch only 해제
+   + vscode 실행
+   + git clone https://github.com/{본인 깃허브 아이디}/cometo.git 터미널 창에 입력
+   + cd ./cometo 로 디렉토리 변경
+   + git checkout devfront 입력으로 브랜치 변경
+   + git pull 로 변경사항 적용하기
+   + npm i 초기 설정
 
-ctrl + shift + ` 키를 눌러 터미널을 열고 OUTPUT이라 써져 있는 창을 클릭한다.
-진행상황을 확인한다.
+4. vscode extenstion에서 azure App service 설치
+   + 왼쪽 사이드바에 Azure 아이콘 생성됨
+   + 그 아이콘을 통해서 vscode Azure 접속 & 로그인
+   + 로그인시 Azure에서 리소스를 만든 계정으로 로그인
+   + Resources 에서 해당 레포지토리가 있는 리소스에서 
+   + App Service 에 있는 rg-hg(랜덤숫자조합으로)을 우클릭하여
+   + Deploy to Web App을 선택한다.
 
-여기서 진행중에 info There appears to be trouble with your netwokr connection 이라는 메시지가 출력되면,
-터미널을 열고 yarn cache clean을 통해 캐시를 지우고 yarn install을 실행해 복구 시킨다.
-이런 과정을 시행하면 이런 오류 메시지가 나타나지 않을 것이다.
+5. 이 상태에서 vscode 상단에 Select the folder to deploy rg-hg(랜덤숫자조합으로)}을 선택하여 배포를 행한다.
 
-Done in OOsec(s) 라고 메시지가 출력되면 배포가 완료되었다.
+   + ctrl + shift + ` 키를 눌러 터미널을 열고 OUTPUT이라 써져 있는 창을 클릭해 진행상황을 확인한다.
+   + 여기서 진행중에 info There appears to be trouble with your network connection 이라는 메시지가 출력되면,
+   + 터미널을 열고 yarn cache clean을 통해 캐시를 지운 후, yarn install을 실행해 네트워크를 복구 시킨다.
+   + 이런 과정을 시행하면 네트워크 오류 메시지가 나타나지 않을 것이다.
+
+6. Done in OOsec(s) 라고 메시지가 출력되면 배포가 완료된 것을 알 수 있다.
 
 
 > **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위한 절차를 구체적으로 나열해 주세요.**
