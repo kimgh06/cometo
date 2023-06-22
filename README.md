@@ -82,10 +82,8 @@
    검토 + 만들기 버튼 클릭 
    만들기
 
-3. 깃허브 로그인
-   + https://github.com/hackersground-kr/cometo fork 시 copy the main brainch only 해제
-   + vscode 실행
-   + git clone https://github.com/{본인 깃허브 아이디}/cometo.git 터미널 창에 입력
+3. 소스코드 불러오기
+   + git clone https://github.com/{본인 깃허브 아이디}/cometo.git 터미널 창에 입력해서 소스코드 불러오기
    + cd ./cometo 로 디렉토리 변경
    + git checkout devfront 입력으로 브랜치 변경
    + git pull 로 변경사항 적용하기
@@ -98,6 +96,7 @@
    + Resources 에서 해당 레포지토리가 있는 리소스에서 
      App Service 에 있는 rg-hg(랜덤숫자조합으로)을 우클릭하여
      Deploy to Web App을 선택한다.
+   + 현재 자신이 작업중인 디렉토리를 선택한다.
 
 5. 이 상태에서 vscode 상단에 Select the folder to deploy rg-hg(랜덤숫자조합으로)}을 선택하여 배포를 행한다.
 
